@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <defs>
+    <!-- Radiant Brushed Gold Gradient -->
+    <linearGradient id="favGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFBEB"/>
+      <stop offset="30%" stop-color="#FCD34D"/>
+      <stop offset="70%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#92400E"/>
+    </linearGradient>
+
+    <!-- Deep Royal Navy Gradient -->
+    <linearGradient id="favNavy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A8A"/>
+      <stop offset="50%" stop-color="#0F2850"/>
+      <stop offset="100%" stop-color="#07152B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Octagonal Security Frame -->
+  <polygon points="14,2 34,2 46,14 46,34 34,46 14,46 2,34 2,14" 
+           fill="url(#favNavy)" 
+           stroke="url(#favGold)" 
+           stroke-width="1.75" 
+           stroke-linejoin="round"/>
+
+  <!-- Inner Filigree Octagon Ring -->
+  <polygon points="15.5,5 32.5,5 43,15.5 43,32.5 32.5,43 15.5,43 5,32.5 5,15.5" 
+           fill="none" 
+           stroke="#FDE68A" 
+           stroke-width="0.75" 
+           stroke-opacity="0.5"/>
+
+  <!-- Dual Intersecting Squares: Ashtalakshmi Star of Abundance -->
+  <rect x="13" y="13" width="22" height="22" rx="1.5" 
+        fill="none" 
+        stroke="url(#favGold)" 
+        stroke-width="1.2" 
+        stroke-opacity="0.8"/>
+  <rect x="13" y="13" width="22" height="22" rx="1.5" 
+        transform="rotate(45 24 24)" 
+        fill="none" 
+        stroke="url(#favGold)" 
+        stroke-width="1.2" 
+        stroke-opacity="0.8"/>
+
+  <!-- Core Growth 'V' Monogram -->
+  <path d="M18 18 L24 30 L30 18" 
+        stroke="url(#favGold)" 
+        stroke-width="2.75" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" 
+        fill="none"/>
+
+  <!-- Upward Prosperity Sprout -->
+  <path d="M24 17 L24 12" 
+        stroke="#FDE68A" 
+        stroke-width="1.75" 
+        stroke-linecap="round"/>
+  <circle cx="24" cy="11" r="1.25" fill="#FFFBEB"/>
+
+  <!-- 4 Cardinal Security Rivets -->
+  <circle cx="24" cy="6.5" r="1" fill="#FCD34D"/>
+  <circle cx="41.5" cy="24" r="1" fill="#FCD34D"/>
+  <circle cx="24" cy="41.5" r="1" fill="#FCD34D"/>
+  <circle cx="6.5" cy="24" r="1" fill="#FCD34D"/>
+</svg>

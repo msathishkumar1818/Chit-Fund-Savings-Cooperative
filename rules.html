@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Auction Rules &amp; Surety Guidelines | Vridhi Chit Fund Cooperative</title>
+  <meta name="description"
+    content="Official auction rules, statutory discount caps, member rights, approved surety criteria, and grievance redressal under the Central Chit Funds Act 1982.">
+
+  <!-- Favicon in HTML Head -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/images/logo/favicon.svg">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0B2545',
+              deep: '#07152B',
+              sapphire: '#133E87',
+              gold: '#D97706',
+              goldLight: '#FDE68A',
+              goldHover: '#B45309'
+            }
+          },
+          fontFamily: {
+            heading: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+            serif: ['Cinzel', 'serif'],
+            body: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- External Stylesheets (Strictly no inline styles) -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body
+  class="bg-white text-slate-800 dark:bg-black dark:text-slate-100 antialiased selection:bg-amber-500 selection:text-white">
+
+  <!-- ==========================================================================
+       BRANDED PAGE PRELOADER (With Logo & Status)
+       ========================================================================= -->
+  <div id="site-loader" role="status" aria-live="polite" aria-label="Loading Vridhi Cooperative">
+    <div class="loader-pulse-ring mb-4">
+      <img src="assets/images/logo/favicon.svg" alt="Vridhi Shield" class="w-12 h-12">
+    </div>
+    <div class="text-center">
+      <h2 class="text-white font-extrabold text-base tracking-widest font-['Plus_Jakarta_Sans']">VRIDHI COOPERATIVE</h2>
+      <p class="text-amber-400 text-xs font-semibold tracking-wider uppercase mt-1">Auction Code &amp; Governance</p>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FIXED COMPACT HEADER
+       [Logo + Brand] [6 Nav Items] [RTL/LTR] [Dark Mode] [Login Button]
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container-site h-full flex items-center justify-between">
+
+      <!-- Brand Identity (Single Line, Logo + Text) -->
+      <a href="index.html" class="brand-identity-container" aria-label="Vridhi Cooperative Home">
+        <img src="assets/images/logo/logo.svg" alt="Vridhi Chit Fund &amp; Savings Cooperative Logo"
+          class="brand-logo-svg w-[220px] md:w-[250px] h-[44px]">
+      </a>
+
+      <!-- Desktop Navigation Cluster (Exactly 6 Nav Items) -->
+      <nav class="desktop-nav-cluster" aria-label="Primary Desktop Navigation">
+
+        <!-- 1. Home (Click-only Dropdown, No Hover) -->
+        <div class="dropdown-wrapper">
+          <button type="button" class="nav-link dropdown-trigger" aria-haspopup="true" aria-expanded="false"
+            aria-controls="desktop-home-menu">
+            <span>Home</span>
+            <svg class="w-4 h-4 text-slate-400 dark:text-slate-500" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div id="desktop-home-menu" class="dropdown-menu">
+            <a href="index.html" class="group">
+              <span>Home 1 <span class="text-xs text-slate-500 dark:text-slate-400 font-normal block">Classic Trust
+                  &amp; Schemes</span></span>
+              <svg class="w-4 h-4 text-amber-500 opacity-0 group-hover:opacity-100 transition-opacity" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </a>
+            <a href="home-2.html" class="group">
+              <span>Home 2 <span class="text-xs text-slate-500 dark:text-slate-400 font-normal block">Digital Member
+                  Growth</span></span>
+              <svg class="w-4 h-4 text-amber-500 opacity-0 group-hover:opacity-100 transition-opacity" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. About Us -->
+        <a href="about.html" class="nav-link">About Us</a>
+
+        <!-- 3. Schemes -->
+        <a href="schemes.html" class="nav-link">Schemes</a>
+
+        <!-- 4. Rules & How it Works (Active) -->
+        <a href="rules.html" class="nav-link active">Rules &amp; Process</a>
+
+        <!-- 5. Member Dashboard -->
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+
+        <!-- 6. Contact (Directly Visible) -->
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Desktop Header Controls: RTL/LTR + Dark Mode + Member Login -->
+      <div class="desktop-header-controls hidden lg:flex items-center gap-3">
+        <!-- RTL/LTR Toggle -->
+        <button type="button" class="lang-toggle-btn" aria-label="Toggle Text Direction">
+          <span class="dir-label font-bold text-xs">LTR</span>
+        </button>
+
+        <!-- Dark Mode Toggle -->
+        <button type="button" class="theme-toggle-btn" aria-label="Switch Theme" title="Toggle Theme">
+          <svg class="icon-sun hidden text-amber-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"></path>
+          </svg>
+          <svg class="icon-moon text-slate-700 dark:text-amber-300" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z" clip-rule="evenodd"></path>
+          </svg>
+        </button>
+
+        <!-- Login Button (Replaces Generic CTA) -->
+        <a href="login.html" class="btn-header-login" aria-label="Member Portal Login">
+          <svg class="w-4 h-4 text-amber-400 dark:text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"></path>
+          </svg>
+          <span class="btn-label">Member Login</span>
+        </a>
+      </div>
+
+      <!-- Mobile Action Bar & Hamburger Toggle -->
+      <div class="flex items-center lg:hidden">
+        <button id="mobile-menu-open" type="button"
+          class="mobile-menu-trigger p-2 rounded-lg bg-slate-100 text-slate-800 dark:bg-zinc-900 dark:text-zinc-100 hover:bg-slate-200 dark:hover:bg-zinc-800 transition-colors"
+          aria-label="Open mobile navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MOBILE DRAWER BACKDROP & ACCORDION NAVIGATION
+       [Brand Logo + Name + Small text + Dark Mode + RTL + Menu Close]
+       ========================================================================= -->
+  <div id="mobile-backdrop" class="mobile-backdrop" aria-hidden="true"></div>
+
+  <div id="mobile-drawer" class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
+    <div class="mobile-drawer-header">
+      <div class="flex items-center space-x-2">
+        <img src="assets/images/logo/favicon.svg" alt="Vridhi Icon" class="w-8 h-8">
+        <div>
+          <span
+            class="block text-sm font-extrabold tracking-wide font-['Plus_Jakarta_Sans'] text-slate-900 dark:text-white">VRIDHI
+            COOPERATIVE</span>
+          <span
+            class="block text-[10px] uppercase tracking-wider text-slate-600 dark:text-slate-300 font-semibold">Auction
+            Code &amp; Governance</span>
+        </div>
+      </div>
+      <button id="mobile-menu-close" type="button"
+        class="p-2 rounded-lg bg-slate-100 text-slate-700 dark:bg-zinc-900 dark:text-zinc-200 hover:bg-slate-200 dark:hover:bg-zinc-800"
+        aria-label="Close mobile navigation menu">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Quick Utilities in Mobile Drawer: Dark Mode & RTL -->
+    <div
+      class="px-5 py-3 bg-slate-50 dark:bg-zinc-950 border-b border-slate-200 dark:border-zinc-800 flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <span class="text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider">Appearance</span>
+        <button type="button" class="theme-toggle-btn" aria-label="Switch Theme" title="Toggle Theme">
+          <svg class="icon-sun hidden text-amber-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"></path>
+          </svg>
+          <svg class="icon-moon text-slate-700 dark:text-amber-300" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z" clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="flex items-center space-x-2">
+        <span class="text-xs font-bold text-slate-700 dark:text-slate-300 uppercase tracking-wider">Direction</span>
+        <button type="button" class="lang-toggle-btn" aria-label="Toggle Text Direction">
+          <span class="dir-label font-bold text-xs">LTR</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav Links -->
+    <nav class="flex-1 py-2" aria-label="Mobile Navigation Menu Links">
+      <!-- Home Accordion (Click-only) -->
+      <div class="mobile-accordion">
+        <button type="button" class="mobile-nav-link w-full text-left mobile-accordion-trigger" aria-expanded="false">
+          <span>Home</span>
+          <svg class="w-4 h-4 text-slate-400 transition-transform duration-200" fill="none" stroke="currentColor"
+            viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div class="mobile-accordion-content">
+          <a href="index.html">
+            <svg class="w-4 h-4 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
+              </path>
+            </svg>
+            <span>Home 1 (Trust &amp; Schemes)</span>
+          </a>
+          <a href="home-2.html">
+            <svg class="w-4 h-4 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6">
+              </path>
+            </svg>
+            <span>Home 2 (Digital Growth)</span>
+          </a>
+        </div>
+      </div>
+
+      <a href="about.html" class="mobile-nav-link">About Us</a>
+      <a href="schemes.html" class="mobile-nav-link">Schemes</a>
+      <a href="rules.html" class="mobile-nav-link active font-bold text-amber-600 dark:text-amber-400">Rules &amp;
+        Process</a>
+      <a href="dashboard.html" class="mobile-nav-link">Member Dashboard</a>
+      <a href="contact.html" class="mobile-nav-link">Contact Us</a>
+    </nav>
+
+    <!-- Mobile Drawer Bottom CTA -->
+    <div class="p-5 border-t border-slate-200 dark:border-zinc-800 bg-slate-50 dark:bg-zinc-950">
+      <a href="login.html"
+        class="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl font-bold text-sm bg-gradient-to-r from-blue-900 to-indigo-900 dark:from-amber-500 dark:to-amber-600 text-white dark:text-black shadow-lg">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"></path>
+        </svg>
+        <span>Member Portal Login / Register</span>
+      </a>
+      <p class="text-center text-[11px] text-slate-600 dark:text-slate-400 mt-2 font-medium">Approved by State Chit
+        Registrar &bull; Reg. No. CHIT/TN/2004/891</p>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MAIN CONTENT: EXACTLY 5 SECTIONS FOR RULES & PROCESS
+       ========================================================================= -->
+  <main class="flex-grow">
+
+    <!-- ========================================================================
+         SECTION 1: STANDARDIZED INNER PAGE HERO (SAME HEIGHT: inner-page-hero)
+         ====================================================================== -->
+    <section class="inner-page-hero relative overflow-hidden text-white border-b border-slate-800 dark:border-zinc-800">
+      <div class="absolute inset-0">
+        <img src="assets/images/sections/p38.jpg" alt="Pillars of Law and Trust"
+          class="inner-hero-bg-img" loading="eager">
+        <div class="inner-hero-overlay" aria-hidden="true"></div>
+      </div>
+
+      <div class="container-site relative z-10 text-center max-w-3xl mx-auto space-y-4">
+
+        <nav aria-label="Breadcrumb"
+          class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/15 text-xs text-slate-300 font-medium">
+          <a href="index.html" class="hover:text-amber-400 transition-colors">Home</a>
+          <span>/</span>
+          <span class="text-amber-400 font-bold">Auction Rules &amp; Surety Guidelines</span>
+        </nav>
+
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-tight inner-hero-title">
+          Statutory Auction Rules, Member Rights &amp; Security Standards
+        </h1>
+
+        <p class="text-base sm:text-lg text-slate-200 font-medium max-w-2xl mx-auto inner-hero-subtitle">Statutory operational standards
+          under Central Chit Funds Act 1982 protecting members.</p>
+
+        <div class="pt-2 flex flex-wrap items-center justify-center gap-4 text-xs font-semibold text-amber-300">
+          <span class="flex items-center gap-1.5">
+            <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+              </path>
+            </svg>
+            Statutory Discount Cap: Capped at 25%
+          </span>
+          <span>&bull;</span>
+          <span>Guaranteed 48-Hour NEFT Disbursement</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 2: LEGAL FRAMEWORK & AUCTION GOVERNANCE CODE
+         ====================================================================== -->
+    <section class="py-16 lg:py-24 bg-white dark:bg-black border-b border-slate-200 dark:border-zinc-800">
+      <div class="container-site">
+
+        <!-- Centered Header: Minimal & Authoritative -->
+        <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+          <span
+            class="inline-block px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider bg-amber-100 text-amber-900 dark:bg-amber-950/80 dark:text-amber-300 border border-amber-300 dark:border-amber-700 mb-3">
+            Mandatory Governance Code
+          </span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 dark:text-white tracking-tight">
+            The 4 Cardinal Rules of the Auction Hall
+          </h2>
+          <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 mt-3 font-medium">Under Central Chit Funds
+            Act 1982 &bull; 100% Audited Member Protection.</p>
+        </div>
+
+        <!-- 4 Cardinal Rules: Fresh Milestone Flow with Zero Body Paragraphs -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+
+          <!-- Rule 01 -->
+          <div
+            class="card-governance p-6 rounded-2xl border-2 border-slate-200 dark:border-zinc-800 bg-slate-50 dark:bg-zinc-950 hover:border-amber-500 dark:hover:border-amber-500 transition-all duration-300 group flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span
+                  class="text-3xl font-black text-slate-300 dark:text-zinc-700 group-hover:text-amber-500 transition-colors font-mono">01</span>
+                <span
+                  class="px-2.5 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wide bg-blue-100 text-blue-900 dark:bg-blue-950 dark:text-blue-300 border border-blue-200 dark:border-blue-900">
+                  Fixed Date
+                </span>
+              </div>
+              <h3
+                class="text-lg font-extrabold text-slate-900 dark:text-white tracking-tight group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">
+                Strict Calendar Timestamps
+              </h3>
+            </div>
+            <div
+              class="card-governance-footer mt-6 pt-4 border-t border-slate-200 dark:border-zinc-800 flex flex-col gap-2">
+              <div
+                class="flex items-center gap-1.5 text-xs font-bold text-emerald-600 dark:text-emerald-400 whitespace-nowrap">
+                <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span>Tamper-Proof Audit</span>
+              </div>
+              <div
+                class="flex items-center justify-between text-[11px] font-mono text-slate-500 dark:text-slate-400 pt-0.5 border-t border-dashed border-slate-200 dark:border-zinc-800/80">
+                <span
+                  class="text-[10px] uppercase font-sans font-semibold tracking-wider text-slate-400 dark:text-slate-500">Statutory
+                  Norm</span>
+                <span
+                  class="font-bold text-slate-700 dark:text-slate-300 bg-slate-200/60 dark:bg-zinc-900 px-2 py-0.5 rounded text-[10px] whitespace-nowrap">Sec.
+                  16 &bull; Act 1982</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rule 02 -->
+          <div
+            class="card-governance p-6 rounded-2xl border-2 border-slate-200 dark:border-zinc-800 bg-slate-50 dark:bg-zinc-950 hover:border-amber-500 dark:hover:border-amber-500 transition-all duration-300 group flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span
+                  class="text-3xl font-black text-slate-300 dark:text-zinc-700 group-hover:text-amber-500 transition-colors font-mono">02</span>
+                <span
+                  class="px-2.5 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wide bg-amber-100 text-amber-900 dark:bg-amber-950 dark:text-amber-300 border border-amber-200 dark:border-amber-900">
+                  Legal Cap
+                </span>
+              </div>
+              <h3
+                class="text-lg font-extrabold text-slate-900 dark:text-white tracking-tight group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">
+                25% Statutory Ceiling
+              </h3>
+            </div>
+            <div
+              class="card-governance-footer mt-6 pt-4 border-t border-slate-200 dark:border-zinc-800 flex flex-col gap-2">
+              <div
+                class="flex items-center gap-1.5 text-xs font-bold text-amber-600 dark:text-amber-400 whitespace-nowrap">
+                <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span>Zero Over-Discount</span>
+              </div>
+              <div
+                class="flex items-center justify-between text-[11px] font-mono text-slate-500 dark:text-slate-400 pt-0.5 border-t border-dashed border-slate-200 dark:border-zinc-800/80">
+                <span
+                  class="text-[10px] uppercase font-sans font-semibold tracking-wider text-slate-400 dark:text-slate-500">Statutory
+                  Norm</span>
+                <span
+                  class="font-bold text-slate-700 dark:text-slate-300 bg-slate-200/60 dark:bg-zinc-900 px-2 py-0.5 rounded text-[10px] whitespace-nowrap">Sec.
+                  21 &bull; Act 1982</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rule 03 -->
+          <div
+            class="card-governance p-6 rounded-2xl border-2 border-slate-200 dark:border-zinc-800 bg-slate-50 dark:bg-zinc-950 hover:border-amber-500 dark:hover:border-amber-500 transition-all duration-300 group flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span
+                  class="text-3xl font-black text-slate-300 dark:text-zinc-700 group-hover:text-amber-500 transition-colors font-mono">03</span>
+                <span
+                  class="px-2.5 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wide bg-emerald-100 text-emerald-900 dark:bg-emerald-950 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-900">
+                  Audited Fee
+                </span>
+              </div>
+              <h3
+                class="text-lg font-extrabold text-slate-900 dark:text-white tracking-tight group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">
+                Fixed 5% Foreman Share
+              </h3>
+            </div>
+            <div
+              class="card-governance-footer mt-6 pt-4 border-t border-slate-200 dark:border-zinc-800 flex flex-col gap-2">
+              <div
+                class="flex items-center gap-1.5 text-xs font-bold text-emerald-600 dark:text-emerald-400 whitespace-nowrap">
+                <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span>95% Dividend Pool</span>
+              </div>
+              <div
+                class="flex items-center justify-between text-[11px] font-mono text-slate-500 dark:text-slate-400 pt-0.5 border-t border-dashed border-slate-200 dark:border-zinc-800/80">
+                <span
+                  class="text-[10px] uppercase font-sans font-semibold tracking-wider text-slate-400 dark:text-slate-500">Statutory
+                  Norm</span>
+                <span
+                  class="font-bold text-slate-700 dark:text-slate-300 bg-slate-200/60 dark:bg-zinc-900 px-2 py-0.5 rounded text-[10px] whitespace-nowrap">Sec.
+                  22 &bull; Act 1982</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rule 04 -->
+          <div
+            class="card-governance p-6 rounded-2xl border-2 border-slate-200 dark:border-zinc-800 bg-slate-50 dark:bg-zinc-950 hover:border-amber-500 dark:hover:border-amber-500 transition-all duration-300 group flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span
+                  class="text-3xl font-black text-slate-300 dark:text-zinc-700 group-hover:text-amber-500 transition-colors font-mono">04</span>
+                <span
+                  class="px-2.5 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wide bg-purple-100 text-purple-900 dark:bg-purple-950 dark:text-purple-300 border border-purple-200 dark:border-purple-900">
+                  Instant Notice
+                </span>
+              </div>
+              <h3
+                class="text-lg font-extrabold text-slate-900 dark:text-white tracking-tight group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">
+                24h Dividend Accounting
+              </h3>
+            </div>
+            <div
+              class="card-governance-footer mt-6 pt-4 border-t border-slate-200 dark:border-zinc-800 flex flex-col gap-2">
+              <div
+                class="flex items-center gap-1.5 text-xs font-bold text-purple-600 dark:text-purple-400 whitespace-nowrap">
+                <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span>SMS &amp; WhatsApp Notice</span>
+              </div>
+              <div
+                class="flex items-center justify-between text-[11px] font-mono text-slate-500 dark:text-slate-400 pt-0.5 border-t border-dashed border-slate-200 dark:border-zinc-800/80">
+                <span
+                  class="text-[10px] uppercase font-sans font-semibold tracking-wider text-slate-400 dark:text-slate-500">Statutory
+                  Norm</span>
+                <span
+                  class="font-bold text-slate-700 dark:text-slate-300 bg-slate-200/60 dark:bg-zinc-900 px-2 py-0.5 rounded text-[10px] whitespace-nowrap">Sec.
+                  23 &bull; Act 1982</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Wide Panoramic Photographic Banner: Zero Text Overload, Pure Prestige -->
+        <div
+          class="relative overflow-hidden rounded-3xl border-2 border-slate-200 dark:border-zinc-800 shadow-2xl group">
+          <img src="assets/images/sections/p39.jpg" alt="Vridhi Auction Hall and Bidding Floor"
+            class="w-full h-[260px] sm:h-[320px] lg:h-[360px] object-cover filter contrast-105 group-hover:scale-105 transition-transform duration-700">
+
+          <!-- Subtle Dark Glass Gradient Overlay -->
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent flex flex-col justify-end p-6 sm:p-10">
+            <div class="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4">
+              <div>
+                <span
+                  class="inline-block px-3 py-1 rounded-md text-xs font-extrabold uppercase tracking-wider bg-amber-500 text-black mb-2 shadow">
+                  Central Act 40 of 1982 &bull; Reg. No. CHIT/TN/2004/891
+                </span>
+                <h4 class="text-xl sm:text-2xl lg:text-3xl font-black text-white tracking-tight">
+                  Live Floor &amp; Encrypted Digital Reverse Bidding Vault
+                </h4>
+              </div>
+
+              <!-- Micro Quick Badges -->
+              <div class="flex flex-wrap items-center gap-2 sm:gap-3">
+                <span
+                  class="px-3 py-1.5 rounded-xl text-xs font-extrabold bg-white/15 backdrop-blur-md text-white border border-white/20">
+                  48-Hr NEFT Release
+                </span>
+                <span
+                  class="px-3 py-1.5 rounded-xl text-xs font-extrabold bg-emerald-500/20 backdrop-blur-md text-emerald-300 border border-emerald-400/30">
+                  0% Foreclosure Penalty
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 3: PRIZE MONEY SETTLEMENT & APPROVED SURETY CRITERIA
+         (4 VISUAL CATEGORIES - TEXT REMOVED, PURE IMAGE FOCUS)
+         ====================================================================== -->
+    <section id="surety"
+      class="py-16 lg:py-24 bg-slate-50 dark:bg-zinc-950 border-b border-slate-200 dark:border-zinc-800">
+      <div class="container-site">
+
+        <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
+          <span
+            class="inline-block px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider bg-amber-100 text-amber-900 dark:bg-amber-950/80 dark:text-amber-300 border border-amber-300 dark:border-amber-700 mb-3">
+            Collateral Security Norms
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+            Approved Surety Categories for 48-Hour Prize Release
+          </h2>
+          <p class="text-base text-slate-700 dark:text-slate-200 mt-3 font-medium">Prized subscribers provide any one
+            approved surety category for immediate fund release.</p>
+        </div>
+
+        <!-- 4 Visual Cards: Images + Headings (Text Removed) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+
+          <!-- Category 1: Salaried Guarantors -->
+          <div
+            class="group relative overflow-hidden rounded-2xl border-2 border-slate-200 dark:border-zinc-800 shadow-xl h-[320px] sm:h-[360px] bg-slate-950">
+            <img src="assets/images/sections/p40.jpg" alt="Salaried Guarantors"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter brightness-90">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+
+            <div class="absolute inset-0 p-5 flex flex-col justify-between text-center items-center">
+              <div class="w-full flex items-center justify-between">
+                <span
+                  class="px-2.5 py-1 rounded-md text-[10px] font-extrabold uppercase tracking-wider bg-blue-900 text-amber-300 shadow">
+                  Option 01
+                </span>
+                <span
+                  class="px-2.5 py-1 rounded-md text-[10px] font-extrabold uppercase bg-emerald-500/90 text-white shadow">
+                  24-36 Hours
+                </span>
+              </div>
+
+              <div>
+                <h3 class="text-xl font-extrabold text-white tracking-tight drop-shadow">
+                  Salaried Guarantors
+                </h3>
+                <span
+                  class="inline-block px-3 py-1 mt-2 rounded-full text-xs font-bold bg-white/20 backdrop-blur-md text-white border border-white/25">
+                  Govt, PSU &amp; Corporate
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Immovable Property -->
+          <div
+            class="group relative overflow-hidden rounded-2xl border-2 border-amber-500 shadow-xl h-[320px] sm:h-[360px] bg-slate-950 ring-2 ring-amber-500/50">
+            <img src="assets/images/sections/p41.jpg" alt="Immovable Property Title Deeds"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter brightness-90">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+
+            <div class="absolute inset-0 p-5 flex flex-col justify-between text-center items-center">
+              <div class="w-full flex items-center justify-between">
+                <span
+                  class="px-2.5 py-1 rounded-md text-[10px] font-extrabold uppercase tracking-wider bg-amber-500 text-black shadow">
+                  Recommended
+                </span>
+                <span
+                  class="px-2.5 py-1 rounded-md text-[10px] font-extrabold uppercase bg-amber-500/90 text-black shadow">
+                  48 Hours
+                </span>
+              </div>
+
+              <div>
+                <h3 class="text-xl font-extrabold text-white tracking-tight drop-shadow">
+                  Immovable Property
+                </h3>
+                <span
+                  class="inline-block px-3 py-1 mt-2 rounded-full text-xs font-bold bg-amber-500/30 backdrop-blur-md text-amber-300 border border-amber-400/30">
+                  Registered Title Deeds
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Financial Deposits -->
+          <div
+            class="group relative overflow-hidden rounded-2xl border-2 border-slate-200 dark:border-zinc-800 shadow-xl h-[320px] sm:h-[360px] bg-slate-950">
+            <img src="assets/images/sections/p42.jpg" alt="Financial Instruments and Bank Deposits"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter brightness-90">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+
+            <div class="absolute inset-0 p-5 flex flex-col justify-between text-center items-center">
+              <div class="w-full flex items-center justify-between">
+                <span
+                  class="px-2.5 py-1 rounded-md text-[10px] font-extrabold uppercase tracking-wider bg-indigo-900 text-white shadow">
+                  Option 03
+                </span>
+                <span
+                  class="px-2.5 py-1 rounded-md text-[10px] font-extrabold uppercase bg-emerald-500/90 text-white shadow">
+                  12-24 Hours
+                </span>
+              </div>
+
+              <div>
+                <h3 class="text-xl font-extrabold text-white tracking-tight drop-shadow">
+                  Financial Deposits
+                </h3>
+                <span
+                  class="inline-block px-3 py-1 mt-2 rounded-full text-xs font-bold bg-white/20 backdrop-blur-md text-white border border-white/25">
+                  Bank FDR &bull; LIC &bull; Bonds
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Co-Member Pledges -->
+          <div
+            class="group relative overflow-hidden rounded-2xl border-2 border-slate-200 dark:border-zinc-800 shadow-xl h-[320px] sm:h-[360px] bg-slate-950">
+            <img src="assets/images/sections/p43.jpg" alt="Co-Member Pledges and Mutual Trust"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 filter brightness-90">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+
+            <div class="absolute inset-0 p-5 flex flex-col justify-between text-center items-center">
+              <div class="w-full flex items-center justify-between">
+                <span
+                  class="px-2.5 py-1 rounded-md text-[10px] font-extrabold uppercase tracking-wider bg-purple-900 text-amber-300 shadow">
+                  Option 04
+                </span>
+                <span
+                  class="px-2.5 py-1 rounded-md text-[10px] font-extrabold uppercase bg-purple-500/90 text-white shadow">
+                  24-48 Hours
+                </span>
+              </div>
+
+              <div>
+                <h3 class="text-xl font-extrabold text-white tracking-tight drop-shadow">
+                  Co-Member Pledges
+                </h3>
+                <span
+                  class="inline-block px-3 py-1 mt-2 rounded-full text-xs font-bold bg-white/20 backdrop-blur-md text-white border border-white/25">
+                  Mutual Group Guarantee
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 4: SUBSCRIBER PROTECTION & GRIEVANCE REDRESSAL (OMBUDSMAN)
+         (FRESH SIMPLE LAYOUT - ZERO BODY PARAGRAPHS - DIRECT HOTLINE)
+         ====================================================================== -->
+    <section id="grievance"
+      class="py-16 lg:py-24 bg-white dark:bg-black border-b border-slate-200 dark:border-zinc-800">
+      <div class="container-site">
+
+        <!-- Centered Header -->
+        <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+          <span
+            class="inline-block px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider bg-amber-100 text-amber-900 dark:bg-amber-950/80 dark:text-amber-300 border border-amber-300 dark:border-amber-700 mb-3">
+            Member Rights Protection
+          </span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 dark:text-white tracking-tight">
+            Independent Grievance Ombudsman &amp; Dispute Redressal
+          </h2>
+          <p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 mt-3 font-medium">Time-bound 4-stage
+            statutory resolution under Tamil Nadu Chit Rules.</p>
+        </div>
+
+        <!-- 2-Column Split: Left Ombudsman Concierge Card + Right Vertical Connected Stepper -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
+
+          <!-- Left: Official Ombudsman Concierge Card -->
+          <div
+            class="lg:col-span-5 p-8 rounded-3xl border-2 border-slate-200 dark:border-zinc-800 bg-slate-50 dark:bg-zinc-950 shadow-xl flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-6">
+                <span
+                  class="px-3 py-1 rounded-full text-xs font-extrabold uppercase tracking-wider bg-amber-500 text-black shadow">
+                  Statutory Ombudsman
+                </span>
+                <span class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-600 dark:text-emerald-400">
+                  <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                  Active Cell
+                </span>
+              </div>
+
+              <!-- Ombudsman Officer Portrait & Identity -->
+              <div class="flex items-center gap-4 mb-6">
+                <div class="relative shrink-0">
+                  <img src="assets/images/sections/p44.jpg" alt="Independent Grievance Ombudsman Officer"
+                    class="w-20 h-20 rounded-2xl object-cover border-2 border-amber-500 shadow-md">
+                </div>
+                <div>
+                  <h3 class="text-lg font-black text-slate-900 dark:text-white">
+                    Adv. S. Lakshmi
+                  </h3>
+                  <div class="text-xs font-bold text-amber-600 dark:text-amber-400 uppercase mt-0.5">
+                    Retd. District Judge
+                  </div>
+                  <div class="text-[11px] text-slate-500 dark:text-slate-400 mt-0.5 font-medium">
+                    Independent Judicial Arbitrator
+                  </div>
+                </div>
+              </div>
+
+              <!-- Direct Hotline Details -->
+              <div class="space-y-3 pt-4 border-t border-slate-200 dark:border-zinc-800">
+                <div class="flex items-center gap-3 text-sm">
+                  <div
+                    class="w-8 h-8 rounded-lg bg-blue-100 dark:bg-zinc-900 flex items-center justify-center text-blue-900 dark:text-amber-400 shrink-0">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-[10px] uppercase font-bold text-slate-500">Ombudsman Direct Line</div>
+                    <div class="font-extrabold font-mono text-slate-900 dark:text-white">+91 (044) 2618-9415</div>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-3 text-sm">
+                  <div
+                    class="w-8 h-8 rounded-lg bg-emerald-100 dark:bg-zinc-900 flex items-center justify-center text-emerald-700 dark:text-emerald-400 shrink-0">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-[10px] uppercase font-bold text-slate-500">Confidential Email</div>
+                    <div class="font-bold text-xs text-slate-900 dark:text-white">grievance@vridhichits.coop</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Action Button -->
+            <div class="mt-8 pt-4 border-t border-slate-200 dark:border-zinc-800">
+              <a href="contact.html"
+                class="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl font-bold text-sm bg-gradient-to-r from-blue-900 to-indigo-900 dark:from-amber-500 dark:to-amber-600 text-white dark:text-black shadow-md hover:opacity-95 transition-all">
+                <span>Submit Grievance Form</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Vertical Connected 4-Step Resolution Track -->
+          <div class="lg:col-span-7 flex flex-col justify-center">
+            <div class="relative pl-6 sm:pl-8 space-y-6">
+
+              <!-- Vertical Connecting Line -->
+              <div class="absolute left-6 sm:left-8 top-6 bottom-6 w-0.5 bg-slate-200 dark:bg-zinc-800 -translate-x-1/2"
+                aria-hidden="true"></div>
+
+              <!-- Step 01 -->
+              <div class="relative flex items-center gap-4 group">
+                <div
+                  class="w-12 h-12 rounded-2xl bg-blue-900 text-amber-400 font-black font-mono flex items-center justify-center shrink-0 shadow-lg border-2 border-white dark:border-zinc-950 z-10 group-hover:scale-110 transition-transform">
+                  01
+                </div>
+                <div
+                  class="flex-grow p-4 rounded-2xl border-2 border-slate-200 dark:border-zinc-800 bg-slate-50 dark:bg-zinc-950 flex items-center justify-between group-hover:border-amber-500 transition-colors">
+                  <div>
+                    <h4 class="text-base font-extrabold text-slate-900 dark:text-white">
+                      Portal Ticket Submission
+                    </h4>
+                    <span class="text-xs text-slate-500 dark:text-slate-400 font-semibold block mt-0.5">
+                      Automated SMS Tracking &amp; Acknowledgment
+                    </span>
+                  </div>
+                  <span
+                    class="px-3 py-1 rounded-full text-xs font-black uppercase bg-blue-100 text-blue-900 dark:bg-blue-950 dark:text-blue-300 shrink-0">
+                    24 Hours
+                  </span>
+                </div>
+              </div>
+
+              <!-- Step 02 -->
+              <div class="relative flex items-center gap-4 group">
+                <div
+                  class="w-12 h-12 rounded-2xl bg-amber-500 text-black font-black font-mono flex items-center justify-center shrink-0 shadow-lg border-2 border-white dark:border-zinc-950 z-10 group-hover:scale-110 transition-transform">
+                  02
+                </div>
+                <div
+                  class="flex-grow p-4 rounded-2xl border-2 border-slate-200 dark:border-zinc-800 bg-slate-50 dark:bg-zinc-950 flex items-center justify-between group-hover:border-amber-500 transition-colors">
+                  <div>
+                    <h4 class="text-base font-extrabold text-slate-900 dark:text-white">
+                      Senior Foreman Hearing
+                    </h4>
+                    <span class="text-xs text-slate-500 dark:text-slate-400 font-semibold block mt-0.5">
+                      Direct Review Session with Legal Counsel
+                    </span>
+                  </div>
+                  <span
+                    class="px-3 py-1 rounded-full text-xs font-black uppercase bg-amber-100 text-amber-900 dark:bg-amber-950 dark:text-amber-300 shrink-0">
+                    48 Hours
+                  </span>
+                </div>
+              </div>
+
+              <!-- Step 03 -->
+              <div class="relative flex items-center gap-4 group">
+                <div
+                  class="w-12 h-12 rounded-2xl bg-emerald-600 text-white font-black font-mono flex items-center justify-center shrink-0 shadow-lg border-2 border-white dark:border-zinc-950 z-10 group-hover:scale-110 transition-transform">
+                  03
+                </div>
+                <div
+                  class="flex-grow p-4 rounded-2xl border-2 border-slate-200 dark:border-zinc-800 bg-slate-50 dark:bg-zinc-950 flex items-center justify-between group-hover:border-amber-500 transition-colors">
+                  <div>
+                    <h4 class="text-base font-extrabold text-slate-900 dark:text-white">
+                      Ombudsman Arbitration
+                    </h4>
+                    <span class="text-xs text-slate-500 dark:text-slate-400 font-semibold block mt-0.5">
+                      Independent Judicial Arbitrator Binding Award
+                    </span>
+                  </div>
+                  <span
+                    class="px-3 py-1 rounded-full text-xs font-black uppercase bg-emerald-100 text-emerald-900 dark:bg-emerald-950 dark:text-emerald-300 shrink-0">
+                    7 Days
+                  </span>
+                </div>
+              </div>
+
+              <!-- Step 04 -->
+              <div class="relative flex items-center gap-4 group">
+                <div
+                  class="w-12 h-12 rounded-2xl bg-purple-900 text-amber-300 font-black font-mono flex items-center justify-center shrink-0 shadow-lg border-2 border-white dark:border-zinc-950 z-10 group-hover:scale-110 transition-transform">
+                  04
+                </div>
+                <div
+                  class="flex-grow p-4 rounded-2xl border-2 border-slate-200 dark:border-zinc-800 bg-slate-50 dark:bg-zinc-950 flex items-center justify-between group-hover:border-amber-500 transition-colors">
+                  <div>
+                    <h4 class="text-base font-extrabold text-slate-900 dark:text-white">
+                      Registrar Statutory Appeal
+                    </h4>
+                    <span class="text-xs text-slate-500 dark:text-slate-400 font-semibold block mt-0.5">
+                      Section 64 Petition to Deputy Registrar
+                    </span>
+                  </div>
+                  <span
+                    class="px-3 py-1 rounded-full text-xs font-black uppercase bg-purple-100 text-purple-900 dark:bg-purple-950 dark:text-purple-300 shrink-0">
+                    Sec 64
+                  </span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 5: FINAL IMPACTFUL CALL-TO-ACTION (MANDATORY LAST SECTION)
+         ====================================================================== -->
+    <section class="relative py-20 lg:py-28 overflow-hidden bg-slate-950 text-white">
+      <div class="absolute inset-0">
+        <img src="assets/images/sections/p45.jpg" alt="Cooperative Legal Hall of Trust"
+          class="site-cta-bg-img" loading="lazy">
+        <div class="site-cta-overlay" aria-hidden="true"></div>
+      </div>
+
+      <div class="container-site relative z-10">
+        <div class="max-w-3xl mx-auto text-center space-y-6">
+
+          <div
+            class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/20 border border-amber-500/40 text-amber-300 text-xs font-bold tracking-wider uppercase">
+            <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+              </path>
+            </svg>
+            <span>Complete Legal Sanction &bull; 100% Escrow Protected</span>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-tight site-cta-title">
+            Ready to Build Your Capital with Total Peace of Mind?
+          </h2>
+
+          <p class="text-base sm:text-lg text-slate-200 font-medium max-w-xl mx-auto site-cta-subtitle">100% pre-sanctioned by Registrar
+            of Chits. Start your transparent savings journey today.</p>
+
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+            <a href="schemes.html"
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-bold text-sm bg-gradient-to-r from-amber-500 to-amber-600 text-black hover:from-amber-400 hover:to-amber-500 shadow-xl transition-all">
+              <span>Explore Registered Schemes</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                </path>
+              </svg>
+            </a>
+
+            <a href="contact.html"
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl font-bold text-sm bg-white/10 hover:bg-white/20 border border-white/20 text-white transition-colors backdrop-blur-sm">
+              <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z">
+                </path>
+              </svg>
+              <span>Speak With Our Legal Advisor</span>
+            </a>
+          </div>
+
+          <div class="pt-4 flex flex-wrap items-center justify-center gap-6 text-xs text-slate-300 font-semibold">
+            <span>&bull; Reg. No. CHIT/TN/2004/891</span>
+            <span>&bull; Central Chit Funds Act 1982 Compliant</span>
+            <span>&bull; Direct Bank NEFT Transfers</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       SHARED PRODUCTION FOOTER
+       [Logo, Trust Disclaimers, Reg Details, 6 Nav Links, Member Services, Contact]
+       ========================================================================= -->
+  <footer class="site-footer bg-slate-900 text-slate-300 dark:bg-black border-t border-slate-800 dark:border-zinc-800">
+    <div class="container-site py-12 lg:py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+
+        <!-- Col 1: Identity & Regulatory Trust -->
+        <div class="space-y-4">
+          <div class="flex items-center space-x-3">
+            <a href="index.html" class="inline-block focus:outline-none focus:ring-2 focus:ring-amber-500 rounded-lg"
+              aria-label="Vridhi Cooperative Home">
+              <img src="assets/images/logo/logo.svg" alt="Vridhi Chit Fund &amp; Savings Cooperative Logo"
+                class="brand-logo-svg w-[220px] md:w-[250px] h-[44px]">
+            </a>
+          </div>
+          <p class="text-sm text-slate-300 dark:text-slate-300 leading-relaxed font-medium">Regulated cooperative
+            society under Central Chit Funds Act 1982.</p>
+          <div class="pt-2 text-xs text-slate-300 dark:text-slate-400 space-y-1 font-semibold">
+            <p><strong class="text-white">Reg. No:</strong> CHIT/TN/2004/891</p>
+            <p><strong class="text-white">Chit Act Adherence:</strong> Central Chit Funds Act 1982</p>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div>
+          <h3 class="text-sm font-bold text-white uppercase tracking-wider mb-4 font-['Plus_Jakarta_Sans']">Quick
+            Navigation</h3>
+          <ul class="space-y-2.5 text-sm font-medium">
+            <li><a href="index.html" class="hover:text-amber-400 transition-colors">Home 1 (Classic Trust)</a></li>
+            <li><a href="home-2.html" class="hover:text-amber-400 transition-colors">Home 2 (Digital Growth)</a></li>
+            <li><a href="about.html" class="hover:text-amber-400 transition-colors">About Our Cooperative</a></li>
+            <li><a href="schemes.html" class="hover:text-amber-400 transition-colors">Chit Schemes &amp; Groups</a></li>
+            <li><a href="rules.html" class="hover:text-amber-400 transition-colors text-amber-400">Auction Rules &amp;
+                Regulations</a></li>
+            <li><a href="contact.html" class="hover:text-amber-400 transition-colors">Contact &amp; Branches</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Member Services & Governance -->
+        <div>
+          <h3 class="text-sm font-bold text-white uppercase tracking-wider mb-4 font-['Plus_Jakarta_Sans']">Member
+            Services</h3>
+          <ul class="space-y-2.5 text-sm font-medium">
+            <li><a href="login.html" class="hover:text-amber-400 transition-colors">Member Portal Login</a></li>
+            <li><a href="dashboard.html" class="hover:text-amber-400 transition-colors">Auction Schedules &amp; Bid
+                Board</a></li>
+            <li><a href="schemes.html#calculator" class="hover:text-amber-400 transition-colors">Dividend Calculator</a>
+            </li>
+            <li><a href="rules.html#surety" class="hover:text-amber-400 transition-colors">Prize Money &amp; Surety
+                Criteria</a></li>
+            <li><a href="rules.html#grievance" class="hover:text-amber-400 transition-colors">Grievance Redressal
+                Cell</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Registered Office & Support -->
+        <div class="space-y-3">
+          <h3 class="text-sm font-bold text-white uppercase tracking-wider mb-4 font-['Plus_Jakarta_Sans']">Headquarters
+          </h3>
+          <div class="text-sm text-slate-300 dark:text-slate-300 space-y-2 font-medium">
+            <p class="flex items-start gap-2">
+              <svg class="w-5 h-5 text-amber-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              <span>Vridhi Bhavan, No. 42 Cooperative Main Road, Anna Nagar, Chennai &ndash; 600040</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-amber-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                </path>
+              </svg>
+              <span>+91 (044) 2618-9400 / +91 94440-12890</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-amber-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                </path>
+              </svg>
+              <span>support@vridhichits.coop</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Regulatory Bar -->
+    <div class="footer-credit-bar bg-slate-950 dark:bg-black py-4 border-t border-slate-800 dark:border-zinc-900">
+      <div
+        class="container-site flex flex-col md:flex-row items-center justify-between text-xs text-slate-400 dark:text-zinc-400 gap-4 font-medium text-center md:text-left rtl:md:text-right pe-4 lg:pe-24">
+        <p class="leading-relaxed">&copy; 2026 Vridhi Chit Fund &amp; Savings Cooperative Society Ltd. All rights
+          reserved.</p>
+        <div class="footer-legal-links flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+          <a href="rules.html#terms" class="hover:text-amber-400 whitespace-nowrap">Terms of Subscription</a>
+          <span class="sep">&bull;</span>
+          <a href="rules.html#privacy" class="hover:text-amber-400 whitespace-nowrap">Member Privacy Policy</a>
+          <span class="sep">&bull;</span>
+          <a href="rules.html#disclosures" class="hover:text-amber-400 whitespace-nowrap">Statutory Disclosures</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       SCROLL TO TOP BUTTON
+       ========================================================================= -->
+  <button id="scroll-to-top" type="button" aria-label="Scroll back to top">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"></path>
+    </svg>
+  </button>
+
+  <!-- External Script (Strictly no inline javascript) -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

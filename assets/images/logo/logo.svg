@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 56" width="340" height="56" fill="none">
+  <defs>
+    <!-- Radiant Brushed Gold Gradient -->
+    <linearGradient id="vridhiGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="20%" stop-color="#FEF08A"/>
+      <stop offset="50%" stop-color="#FBBF24"/>
+      <stop offset="80%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+
+    <!-- Deep Royal Navy Gradient -->
+    <linearGradient id="vridhiNavy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A8A"/>
+      <stop offset="50%" stop-color="#0F2850"/>
+      <stop offset="100%" stop-color="#07152B"/>
+    </linearGradient>
+
+    <!-- Gold Accent Stroke Gradient -->
+    <linearGradient id="goldLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D97706"/>
+      <stop offset="50%" stop-color="#FDE68A"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+
+    <!-- Drop Shadow for Dimensional Vault Feel -->
+    <filter id="vaultGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1.5" flood-color="#07152B" flood-opacity="0.3"/>
+    </filter>
+
+    <style>
+      .brand-title {
+        font-family: 'Cinzel', 'Plus Jakarta Sans', Georgia, serif;
+        font-weight: 800;
+        font-size: 22px;
+        letter-spacing: 0.08em;
+      }
+      .brand-sub {
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        font-weight: 700;
+        font-size: 8.5px;
+        letter-spacing: 0.16em;
+      }
+    </style>
+  </defs>
+
+  <!-- ========================================================================
+       1. OCTAGONAL VAULT SEAL EMBLEM (48x48)
+       ======================================================================== -->
+  <g transform="translate(4, 4)" filter="url(#vaultGlow)">
+    <!-- Outer Octagonal Security Frame -->
+    <polygon points="14,2 34,2 46,14 46,34 34,46 14,46 2,34 2,14" 
+             fill="url(#vridhiNavy)" 
+             stroke="url(#vridhiGold)" 
+             stroke-width="1.75" 
+             stroke-linejoin="round"/>
+
+    <!-- Inner Filigree Octagon Ring -->
+    <polygon points="15.5,5 32.5,5 43,15.5 43,32.5 32.5,43 15.5,43 5,32.5 5,15.5" 
+             fill="none" 
+             stroke="#FDE68A" 
+             stroke-width="0.75" 
+             stroke-opacity="0.6"/>
+
+    <!-- Dual Intersecting Squares: Ashtalakshmi Star of Abundance -->
+    <rect x="13" y="13" width="22" height="22" rx="1.5" 
+          fill="none" 
+          stroke="url(#vridhiGold)" 
+          stroke-width="1.2" 
+          stroke-opacity="0.8"/>
+    <rect x="13" y="13" width="22" height="22" rx="1.5" 
+          transform="rotate(45 24 24)" 
+          fill="none" 
+          stroke="url(#vridhiGold)" 
+          stroke-width="1.2" 
+          stroke-opacity="0.8"/>
+
+    <!-- Core Growth 'V' Monogram -->
+    <path d="M18 18 L24 30 L30 18" 
+          stroke="url(#vridhiGold)" 
+          stroke-width="2.75" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" 
+          fill="none"/>
+
+    <!-- Upward Prosperity Sprout -->
+    <path d="M24 17 L24 12" 
+          stroke="#FDE68A" 
+          stroke-width="1.75" 
+          stroke-linecap="round"/>
+    <circle cx="24" cy="11" r="1.25" fill="#FFFBEB"/>
+
+    <!-- 4 Cardinal Security Rivets -->
+    <circle cx="24" cy="6.5" r="1" fill="#FCD34D"/>
+    <circle cx="41.5" cy="24" r="1" fill="#FCD34D"/>
+    <circle cx="24" cy="41.5" r="1" fill="#FCD34D"/>
+    <circle cx="6.5" cy="24" r="1" fill="#FCD34D"/>
+  </g>
+
+  <!-- ========================================================================
+       2. TYPOGRAPHY: MAJUSCULE WORDMARK + ACCENT BADGE
+       ======================================================================== -->
+  <g transform="translate(62, 11)">
+    <!-- Primary Brand Wordmark "VRIDHI" in Rich Gold with Subtle Navy Contour -->
+    <text x="0" y="20" class="brand-title" fill="url(#vridhiGold)" stroke="#0F2850" stroke-width="0.35">VRIDHI</text>
+
+    <!-- Cooperative Shield Pill -->
+    <g transform="translate(104, 3)">
+      <rect x="0" y="0" width="112" height="18" rx="4" 
+            fill="url(#vridhiNavy)" 
+            stroke="url(#goldLine)" 
+            stroke-width="1"/>
+      <text x="56" y="12.5" 
+            text-anchor="middle" 
+            font-family="'Plus Jakarta Sans', system-ui, sans-serif" 
+            font-size="8.5" 
+            font-weight="800" 
+            letter-spacing="0.14em" 
+            fill="#FDE68A">
+        COOPERATIVE
+      </text>
+    </g>
+
+    <!-- Subtitle: Chit Fund & Savings Society -->
+    <text x="1" y="36" class="brand-sub" fill="#F59E0B" stroke="#78350F" stroke-width="0.25">
+      CHIT FUND &amp; SAVINGS SOCIETY &#8226; ESTD 2004
+    </text>
+  </g>
+</svg>

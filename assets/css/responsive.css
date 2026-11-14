@@ -1,0 +1,695 @@
+/* ==========================================================================
+   VRIDHI CHIT FUND & SAVINGS COOPERATIVE - RESPONSIVE STYLESHEET
+   Precision Breakpoint Adaptations: 320, 375, 425, 768, 820, 1024, 1280, 1440+
+   ========================================================================== */
+
+/* Universal Container Safety — Aligned Across Header, Sections, Footer */
+.container-site {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+  .container-site {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-site {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container-site {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* ==========================================================================
+   DESKTOP / MOBILE HEADER SWITCHING (Aligned with Tailwind lg: 1024px)
+   ========================================================================== */
+@media (max-width: 1023px) {
+  .desktop-nav-cluster {
+    display: none !important;
+  }
+  .desktop-header-controls {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .desktop-nav-cluster {
+    display: flex !important;
+    align-items: center;
+    gap: 6px;
+  }
+  .desktop-header-controls {
+    display: flex !important;
+  }
+  .mobile-menu-trigger {
+    display: none !important;
+  }
+}
+
+/* Compact navigation sizing for laptop screens (1024px - 1280px) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .desktop-nav-cluster {
+    gap: 4px;
+  }
+  .nav-link {
+    font-size: 0.8125rem;
+    padding: 6px 8px;
+    height: 36px;
+    gap: 3px;
+  }
+  .dropdown-wrapper {
+    height: 36px;
+  }
+  .theme-toggle-btn,
+  .lang-toggle-btn {
+    width: 36px;
+    height: 36px;
+  }
+  .btn-header-login {
+    height: 36px;
+    padding: 0 12px;
+  }
+  .brand-logo-svg {
+    width: 195px;
+    height: 38px;
+  }
+}
+
+/* ==========================================================================
+   COMPACT BALANCED SCHEME CARDS (Tablets & Compact Laptops: 640px to 1279px)
+   Prevents text clipping, wrapping, and overflow across 2-col, 3-col & 4-col grids
+   ========================================================================== */
+@media (min-width: 640px) and (max-width: 1279px) {
+  .scheme-card {
+    padding: 1.25rem 0.875rem !important;
+  }
+  .scheme-card ul {
+    font-size: 0.8125rem !important;
+  }
+  .scheme-card ul li {
+    font-size: 0.8125rem !important;
+  }
+  .scheme-card ul li span,
+  .scheme-card ul li strong {
+    font-size: 0.8125rem !important;
+    white-space: nowrap !important;
+  }
+  .scheme-card .text-3xl {
+    font-size: 1.5rem !important;
+  }
+  .scheme-card a {
+    padding-left: 0.625rem !important;
+    padding-right: 0.625rem !important;
+    font-size: 0.75rem !important;
+  }
+  .scheme-badge-row {
+    gap: 4px !important;
+  }
+  .scheme-badge-row > span {
+    font-size: 0.6875rem !important;
+    white-space: nowrap !important;
+    letter-spacing: 0.01em !important;
+  }
+  .scheme-badge-row > span:first-child {
+    padding-left: 0.375rem !important;
+    padding-right: 0.375rem !important;
+    font-size: 0.6875rem !important;
+  }
+  .card-governance {
+    padding: 1.25rem 0.875rem !important;
+  }
+}
+
+/* ==========================================================================
+   MOBILE & TABLET REFINEMENTS (320px - 768px)
+   ========================================================================== */
+@media (max-width: 480px) {
+  :root {
+    --header-height: 60px;
+  }
+
+  .brand-logo-svg {
+    width: 180px;
+    height: 38px;
+  }
+
+  .btn-header-login {
+    padding: 0 10px;
+    font-size: 0.8rem;
+    height: 34px;
+    gap: 4px;
+  }
+
+  .btn-header-login span.btn-label {
+    display: inline;
+  }
+
+  .theme-toggle-btn,
+  .lang-toggle-btn {
+    width: 32px;
+    height: 32px;
+  }
+
+  .footer-col {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .brand-logo-svg {
+    width: 155px;
+    height: 34px;
+  }
+  .btn-header-login span.btn-label {
+    display: none;
+  }
+  .btn-header-login {
+    padding: 0 8px;
+    width: 34px;
+    justify-content: center;
+  }
+}
+
+/* ==========================================================================
+   AVOID HORIZONTAL SCROLL & OVERFLOW
+   ========================================================================== */
+img, svg, video, canvas, audio, iframe, embed, object {
+  display: block;
+  max-width: 100%;
+}
+
+pre, code {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+
+/* ==========================================================================
+   LOGIN PAGE — RESPONSIVE
+   ========================================================================== */
+
+/* Below 900px: stack panels vertically */
+@media (max-width: 900px) {
+  .login-split-section {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .login-brand-panel {
+    min-height: 320px;
+    align-items: flex-end;
+  }
+
+  .login-brand-content {
+    padding: 2rem 1.5rem;
+    gap: 1.25rem;
+  }
+
+  .login-trust-pillars {
+    display: none; /* hide on small screens to save space */
+  }
+
+  .login-brand-top-row {
+    gap: 8px;
+  }
+
+  .login-brand-logo-wrap {
+    gap: 8px;
+    min-width: 0;
+    flex: 1 1 auto;
+  }
+
+  .login-brand-favicon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .login-brand-name {
+    font-size: 0.875rem;
+    line-height: 1.15;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .login-brand-tagline {
+    font-size: 0.6875rem;
+    line-height: 1.15;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .login-brand-controls {
+    gap: 6px;
+    flex-shrink: 0;
+  }
+
+  .login-ctrl-btn {
+    padding: 5px 9px;
+    font-size: 0.7rem;
+    min-height: 30px;
+  }
+
+  .login-ctrl-btn.theme-toggle-btn {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    min-height: 32px;
+  }
+
+  .login-brand-headline {
+    font-size: 1.5rem;
+  }
+
+  .login-brand-subtext {
+    font-size: 0.85rem;
+  }
+
+  .login-form-panel {
+    padding: 2rem 1.25rem;
+  }
+
+  .form-field-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Below 480px */
+@media (max-width: 480px) {
+  .login-brand-panel {
+    min-height: 220px;
+  }
+
+  .login-brand-content {
+    padding: 1.5rem 1rem;
+    gap: 1rem;
+  }
+
+  .login-brand-headline {
+    font-size: 1.25rem;
+  }
+
+  .login-form-panel {
+    padding: 1.5rem 1rem;
+  }
+
+  .login-form-container {
+    max-width: 100%;
+  }
+
+  .login-tab {
+    font-size: 0.8rem;
+    padding: 8px 10px;
+  }
+
+  .login-form-title {
+    font-size: 1.4rem;
+  }
+
+  .login-form-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+/* Below 375px */
+@media (max-width: 375px) {
+  .login-brand-panel {
+    min-height: 180px;
+  }
+  .login-tab-switcher {
+    gap: 2px;
+  }
+}
+
+/* ==========================================================================
+   MEMBER PORTAL — RESPONSIVE SPECIFICATIONS
+   Breakpoints: 360px, 375px, 393px, 412px, 427px, 440px, 768px, 960px, 1024px, 1280px
+   ========================================================================== */
+
+@media (min-width: 1025px) {
+  .portal-sidebar {
+    position: sticky !important;
+    top: 70px !important;
+    height: calc(100vh - 70px) !important;
+    height: calc(100dvh - 70px) !important;
+    max-height: calc(100vh - 70px) !important;
+    overflow-y: auto;
+    transform: translateX(0) !important;
+  }
+  .portal-sidebar::-webkit-scrollbar {
+    width: 4px;
+  }
+  .portal-sidebar::-webkit-scrollbar-thumb {
+    background-color: #E2E8F0;
+    border-radius: 4px;
+  }
+  html.dark .portal-sidebar::-webkit-scrollbar-thumb {
+    background-color: #27272A;
+  }
+  .portal-drawer-utilities,
+  .portal-sidebar-footer {
+    display: none !important;
+  }
+  .portal-mobile-btn {
+    display: none !important;
+  }
+  .portal-overlay {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1240px) {
+  .portal-welcome-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 22px 24px;
+  }
+  .portal-welcome-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 1024px) {
+  .portal-topbar {
+    padding: 0 20px;
+  }
+
+  .portal-mobile-btn {
+    display: inline-flex !important;
+  }
+
+  .portal-sidebar {
+    position: fixed !important;
+    top: 0 !important;
+    right: 0 !important;
+    left: auto !important;
+    bottom: 0 !important;
+    height: 100vh !important;
+    height: 100dvh !important;
+    max-height: 100vh !important;
+    overflow-y: auto !important;
+    z-index: 999 !important;
+    transform: translateX(100%);
+    width: 300px;
+    max-width: 88vw;
+    box-shadow: -4px 0 24px rgba(0, 0, 0, 0.25);
+  }
+
+  [dir="rtl"] .portal-sidebar {
+    right: auto !important;
+    left: 0 !important;
+    transform: translateX(-100%);
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.25);
+  }
+
+  .portal-sidebar.open {
+    transform: translateX(0) !important;
+  }
+
+  [dir="rtl"] .portal-sidebar.open {
+    transform: translateX(0) !important;
+  }
+
+  .portal-overlay {
+    display: block;
+    z-index: 998 !important;
+  }
+
+  .portal-main {
+    padding: 24px 20px;
+  }
+
+  .portal-stat-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portal-welcome-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 22px 24px;
+  }
+
+  .portal-welcome-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .portal-stat-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .portal-topbar {
+    height: 64px;
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .portal-brand-subtitle {
+    display: none;
+  }
+
+  .portal-brand-title {
+    font-size: 0.95rem;
+  }
+
+  .portal-ctrl-btn {
+    padding: 6px 10px;
+    font-size: 0.75rem;
+  }
+
+  .portal-logout-btn span {
+    display: none;
+  }
+
+  .portal-main {
+    padding: 16px 14px 32px;
+  }
+
+  .portal-stat-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .portal-table {
+    min-width: 620px;
+  }
+
+  .portal-table th {
+    padding: 10px 12px !important;
+    font-size: 0.65rem !important;
+  }
+
+  .portal-table td {
+    padding: 11px 12px !important;
+    font-size: 0.8125rem !important;
+  }
+
+  .portal-welcome-card {
+    padding: 18px 16px;
+  }
+
+  .portal-welcome-title {
+    font-size: 1.35rem;
+  }
+
+  .portal-welcome-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .portal-btn-gold,
+  .portal-btn-outline {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .portal-card-block-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 16px 18px;
+  }
+}
+
+@media (max-width: 393px) {
+  .portal-topbar {
+    padding: 0 12px;
+  }
+
+  .portal-brand-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .portal-brand-title {
+    font-size: 0.85rem;
+  }
+
+  .portal-stat-value {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .portal-top-actions {
+    gap: 6px;
+  }
+
+  .portal-ctrl-btn {
+    padding: 5px 8px;
+    font-size: 0.7rem;
+  }
+}
+
+/* ==========================================================================
+   CONTACT PAGE — RESPONSIVE BREAKPOINTS
+   360px, 375px, 393px, 412px, 427px, 440px, 768px, 960px, 1024px, 1280px
+   ========================================================================== */
+
+@media (max-width: 1023px) {
+  .contact-form-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .contact-assist-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .contact-map-frame-wrap {
+    height: 420px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section-form {
+    padding: 56px 0;
+  }
+
+  .contact-section-title {
+    font-size: 1.75rem;
+  }
+
+  .contact-section-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .contact-form-header {
+    margin-bottom: 24px;
+  }
+
+  .contact-section-map {
+    padding: 56px 0;
+  }
+
+  .contact-section-cta {
+    padding: 72px 0;
+  }
+
+  .contact-map-frame-wrap {
+    height: 360px;
+  }
+
+  .contact-form-box {
+    padding: 28px 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-input-row {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .contact-form-box {
+    padding: 22px 18px;
+    border-radius: 14px;
+  }
+
+  .contact-map-frame-wrap {
+    height: 300px;
+    border-radius: 14px;
+  }
+
+  .contact-map-badge {
+    position: static;
+    margin-top: 14px;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  .contact-cta-btns {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contact-cta-btn-gold,
+  .contact-cta-btn-outline {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact-cta-badges {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 440px) {
+  .contact-hero-h1 {
+    font-size: 2rem;
+  }
+
+  .contact-hero-chips {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contact-hero-chip {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact-form-title {
+    font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .contact-form-box {
+    padding: 16px 12px;
+  }
+
+  .contact-input {
+    padding: 10px 12px;
+    font-size: 0.85rem;
+  }
+}
