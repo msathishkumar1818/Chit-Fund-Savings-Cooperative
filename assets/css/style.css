@@ -2004,22 +2004,43 @@ html.dark .portal-welcome-card {
   flex-direction: column;
   gap: 6px;
   min-width: 0;
+  flex: 1 1 auto;
 }
 
 .portal-welcome-title {
   font-family: var(--font-serif);
-  font-size: clamp(1.35rem, 2vw, 1.85rem);
+  font-size: clamp(1.2rem, 1.8vw, 1.75rem);
   font-weight: 700;
   letter-spacing: -0.01em;
   color: #0F172A;
   margin: 0;
-  line-height: 1.2;
+  line-height: 1.25;
   text-transform: uppercase;
-  white-space: nowrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+@media (min-width: 1025px) {
+  .portal-welcome-title-nowrap {
+    white-space: nowrap;
+  }
 }
 
 html.dark .portal-welcome-title {
   color: #FFFFFF !important;
+}
+
+.portal-welcome-sub {
+  font-size: 0.875rem;
+  color: #64748B;
+  margin: 0;
+  line-height: 1.5;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+html.dark .portal-welcome-sub {
+  color: #94A3B8;
 }
 
 .portal-welcome-meta {
@@ -3309,63 +3330,127 @@ html.dark .contact-badge-sub {
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.9);
 }
 
-
-
-.site-cta-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(3, 7, 18, 0.72) 0%,
-    rgba(7, 21, 43, 0.52) 50%,
-    rgba(3, 7, 18, 0.82) 100%
-  );
-  z-index: 1;
-}
-
-.site-cta-title {
-  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.9), 0 1px 3px rgba(0, 0, 0, 0.95);
-}
-
-.site-cta-subtitle {
-  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.9);
-}
-
 /* ==========================================================================
-   STANDARDIZED INNER PAGE HERO BACKGROUND & TEXT LEGIBILITY
+   DASHBOARD PROXY BID FORM — EVEN HEIGHT & BASELINE ALIGNMENT
    ========================================================================== */
-.inner-hero-bg-img {
-  position: absolute;
-  inset: 0;
+.proxy-bid-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.proxy-bid-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  opacity: 0.75 !important;
-  filter: contrast(1.15) brightness(0.95);
-  z-index: 0;
-  transition: opacity 0.3s ease;
 }
 
-.inner-hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(3, 7, 18, 0.60) 0%,
-    rgba(7, 21, 43, 0.38) 50%,
-    rgba(3, 7, 18, 0.82) 100%
-  );
-  z-index: 1;
-  pointer-events: none;
+.proxy-bid-label {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: #1E293B;
+  letter-spacing: 0.01em;
+  margin-bottom: 0.5rem;
+  height: 20px;
+  line-height: 20px;
+  white-space: nowrap;
 }
 
-.inner-hero-title {
-  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.95), 0 1px 4px rgba(0, 0, 0, 0.95);
+html.dark .proxy-bid-label {
+  color: #E2E8F0;
 }
 
-.inner-hero-subtitle {
-  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.9);
+.proxy-bid-label-hidden {
+  visibility: hidden;
+  user-select: none;
 }
+
+.proxy-bid-field-wrap {
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.proxy-bid-input {
+  width: 100%;
+  height: 48px !important;
+  min-height: 48px !important;
+  padding: 0 16px !important;
+  border: 1.5px solid #E2E8F0;
+  border-radius: 10px;
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #0F172A;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  outline: none;
+}
+
+#bid-group.proxy-bid-input {
+  background-color: #F8FAFC;
+  color: #334155;
+  cursor: default;
+}
+
+html.dark .proxy-bid-input {
+  background-color: #0A0A0A;
+  border-color: #27272A;
+  color: #F8FAFC;
+}
+
+html.dark #bid-group.proxy-bid-input {
+  background-color: #141416;
+  border-color: #27272A;
+  color: #E2E8F0;
+}
+
+.proxy-bid-input:focus {
+  border-color: #D97706;
+  box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.15);
+}
+
+.proxy-bid-btn {
+  width: 100% !important;
+  height: 48px !important;
+  min-height: 48px !important;
+  padding: 0 20px !important;
+  border-radius: 10px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-family: var(--font-heading) !important;
+  font-size: 0.9375rem !important;
+  font-weight: 700 !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+}
+
+.proxy-bid-hint {
+  font-size: 0.75rem;
+  color: #64748B;
+  margin-top: 0.5rem;
+  height: 20px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+html.dark .proxy-bid-hint {
+  color: #94A3B8;
+}
+
+.proxy-bid-hint-center {
+  justify-content: center;
+  gap: 0.35rem;
+}
+
+
 
 

@@ -285,7 +285,7 @@
         <!-- 1. Welcome Card -->
         <section class="portal-welcome-card" aria-label="Member welcome header">
           <div class="portal-welcome-info">
-            <h1 class="portal-welcome-title">WELCOME BACK, RAJAN</h1>
+            <h1 class="portal-welcome-title portal-welcome-title-nowrap">WELCOME BACK, RAJAN</h1>
             <div class="portal-welcome-meta">
               <span>Tier: <strong class="portal-welcome-meta-gold">Platinum Chit Club</strong></span>
               <span class="portal-welcome-meta-sep" aria-hidden="true">•</span>
@@ -527,9 +527,9 @@
            ==================================================================== -->
       <div class="portal-tab-panel hidden" id="tab-schemes" role="tabpanel" aria-labelledby="tab-btn-schemes">
         <section class="portal-welcome-card" aria-label="Schemes heading">
-          <div>
+          <div class="portal-welcome-info">
             <h1 class="portal-welcome-title">MY ACTIVE CHIT SCHEMES</h1>
-            <p class="portal-welcome-meta">Track active subscriptions, payment milestones, and prize eligibility.</p>
+            <p class="portal-welcome-sub">Track active subscriptions, payment milestones, and prize eligibility.</p>
           </div>
           <div class="portal-welcome-actions">
             <a href="schemes.html" class="portal-btn-gold">Explore New Schemes</a>
@@ -639,9 +639,9 @@
       <div class="portal-tab-panel hidden" id="tab-contributions" role="tabpanel"
         aria-labelledby="tab-btn-contributions">
         <section class="portal-welcome-card" aria-label="Contributions header">
-          <div>
+          <div class="portal-welcome-info">
             <h1 class="portal-welcome-title">CONTRIBUTION LEDGER &amp; STATS</h1>
-            <p class="portal-welcome-meta">Complete transaction history of monthly installments and dividend offsets.
+            <p class="portal-welcome-sub">Complete transaction history of monthly installments and dividend offsets.
             </p>
           </div>
           <div class="portal-welcome-actions">
@@ -752,9 +752,9 @@
            ==================================================================== -->
       <div class="portal-tab-panel hidden" id="tab-auctions" role="tabpanel" aria-labelledby="tab-btn-auctions">
         <section class="portal-welcome-card" aria-label="Auction schedule header">
-          <div>
+          <div class="portal-welcome-info">
             <h1 class="portal-welcome-title">AUCTION SCHEDULE &amp; BID ROOM</h1>
-            <p class="portal-welcome-meta">Join monthly live reverse auctions or submit automated proxy bids.</p>
+            <p class="portal-welcome-sub">Join monthly live reverse auctions or submit automated proxy bids.</p>
           </div>
         </section>
 
@@ -764,20 +764,35 @@
           <p class="text-sm text-slate-500 mb-6">Statutory discount capped at 25% (₹25,000 max). Bidding opens at 11:30
             AM.</p>
 
-          <form id="proxy-bid-form" class="grid grid-cols-1 md:grid-cols-3 gap-6"
+          <form id="proxy-bid-form" class="proxy-bid-grid"
             onsubmit="event.preventDefault(); alert('Proxy bid token submitted successfully! Token #PB-84920-15 registered.');">
-            <div>
-              <label for="bid-group" class="form-label">Subscribed Chit Group</label>
-              <input type="text" id="bid-group" class="form-input bg-slate-50" value="Platinum #PT-2024-14 (₹1,00,000)"
-                readonly>
+            <div class="proxy-bid-col">
+              <label for="bid-group" class="proxy-bid-label">Subscribed Chit Group</label>
+              <div class="proxy-bid-field-wrap">
+                <input type="text" id="bid-group" class="proxy-bid-input" value="Platinum #PT-2024-14 (₹1,00,000)" readonly>
+              </div>
+              <span class="proxy-bid-hint">Scheme Value: ₹1,00,000 &bull; Round 15 of 25</span>
             </div>
-            <div>
-              <label for="bid-discount" class="form-label">Your Maximum Discount </label>
-              <input type="number" id="bid-discount" class="form-input" min="5" max="25" value="18" step="0.5" required>
-              <span class="text-xs text-slate-400 mt-1 block">Expected Net Prize Money: ₹82,000</span>
+
+            <div class="proxy-bid-col">
+              <label for="bid-discount" class="proxy-bid-label">Your Maximum Discount (%)</label>
+              <div class="proxy-bid-field-wrap">
+                <input type="number" id="bid-discount" class="proxy-bid-input" min="5" max="25" value="18" step="0.5" required>
+              </div>
+              <span class="proxy-bid-hint">Expected Net Prize Money: <strong class="text-emerald-600 dark:text-emerald-400 font-bold ml-1">₹82,000</strong></span>
             </div>
-            <div class="flex items-end">
-              <button type="submit" class="portal-btn-gold w-full justify-center">Authorize Proxy Bid</button>
+
+            <div class="proxy-bid-col">
+              <span class="proxy-bid-label proxy-bid-label-hidden" aria-hidden="true">&nbsp;</span>
+              <div class="proxy-bid-field-wrap">
+                <button type="submit" class="portal-btn-gold proxy-bid-btn">Authorize Proxy Bid</button>
+              </div>
+              <span class="proxy-bid-hint proxy-bid-hint-center">
+                <svg class="w-3.5 h-3.5 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Instant Escrow Lock &bull; Round 15</span>
+              </span>
             </div>
           </form>
         </div>
@@ -851,9 +866,9 @@
            ==================================================================== -->
       <div class="portal-tab-panel hidden" id="tab-statements" role="tabpanel" aria-labelledby="tab-btn-statements">
         <section class="portal-welcome-card" aria-label="Statements header">
-          <div>
+          <div class="portal-welcome-info">
             <h1 class="portal-welcome-title">STATEMENTS &amp; FINANCIAL LEDGER</h1>
-            <p class="portal-welcome-meta">Download auditor-certified ledger passbooks and dividend tax certificates.
+            <p class="portal-welcome-sub">Download auditor-certified ledger passbooks and dividend tax certificates.
             </p>
           </div>
         </section>
@@ -940,9 +955,9 @@
            ==================================================================== -->
       <div class="portal-tab-panel hidden" id="tab-profile" role="tabpanel" aria-labelledby="tab-btn-profile">
         <section class="portal-welcome-card" aria-label="Profile header">
-          <div>
+          <div class="portal-welcome-info">
             <h1 class="portal-welcome-title">MEMBER PROFILE &amp; KYC</h1>
-            <p class="portal-welcome-meta">Verified credentials registered under Central Chit Funds Act 1982.</p>
+            <p class="portal-welcome-sub">Verified credentials registered under Central Chit Funds Act 1982.</p>
           </div>
         </section>
 

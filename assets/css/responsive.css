@@ -514,7 +514,8 @@ pre, code {
   }
 
   .portal-welcome-title {
-    font-size: 1.35rem;
+    font-size: clamp(1.15rem, 4vw, 1.35rem);
+    line-height: 1.25;
   }
 
   .portal-welcome-actions {
@@ -693,3 +694,23 @@ pre, code {
     font-size: 0.85rem;
   }
 }
+
+/* ==========================================================================
+   DASHBOARD PROXY BID FORM RESPONSIVE BREAKPOINT
+   ========================================================================== */
+@media (max-width: 768px) {
+  .proxy-bid-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .proxy-bid-label-hidden {
+    display: none;
+  }
+
+  .proxy-bid-hint {
+    height: auto;
+    white-space: normal;
+  }
+}
+
